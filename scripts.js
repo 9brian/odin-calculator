@@ -4,7 +4,7 @@
 /* Buttons map */
 const buttons = {};
 
-for (let i = 1; i <= 9; i++) {
+for (let i = 0; i <= 9; i++) {
     const btn = document.getElementById(i.toString());
     buttons[i] = btn;
 
@@ -12,6 +12,34 @@ for (let i = 1; i <= 9; i++) {
         console.log(i);
     });
 }
+
+const division_sign = document.getElementById("divide");
+division_sign.addEventListener("click", () => {
+    console.log("/");
+});
+
+const subtraction_sign = document.getElementById("subtract");
+subtraction_sign.addEventListener("click", () => {
+    console.log("-");
+});
+
+const addition_sign = document.getElementById("add");
+addition_sign.addEventListener("click", () => {
+    console.log("+");
+});
+
+// Dont need event listener, but leaving this here for now
+// const equal_sign = document.getElementById("solve");
+
+const decimal_point = document.getElementById("decimal");
+decimal_point.addEventListener("click", () => {
+    console.log(".");
+});
+
+const clear_sign = document.getElementById("clear");
+clear_sign.addEventListener("click", () => {
+    console.log("clear");
+});
 
 console.log(buttons);
 // buttons[2].style.backgroundColor = "green";
