@@ -145,4 +145,4 @@ function parser(string){
 //     console.log("num1 " + num1);
 //     console.log("operator " + operator);
 //     console.log("num2 " + num2);
-// }
+}
