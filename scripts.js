@@ -1,14 +1,29 @@
-function addition(a,b){
-    return a + b;
+/* Scripts.js */
+
+
+/* Buttons map */
+const buttons = {};
+
+for (let i = 1; i <= 9; i++) {
+    const btn = document.getElementById(i.toString());
+    buttons[i] = btn;
+
+    btn.addEventListener("click", () => {
+        console.log(i);
+    });
 }
 
-function subtraction(a,b){
-    return a - b;
-}
+console.log(buttons);
+// buttons[2].style.backgroundColor = "green";
 
-function multiplication(a,b){
-    return a * b;
-}
+
+/* Functions */
+
+function addition(a,b){return a + b;}
+
+function subtraction(a,b){return a - b;}
+
+function multiplication(a,b){return a * b;}
 
 function division(a,b){
     if (b === 0){
